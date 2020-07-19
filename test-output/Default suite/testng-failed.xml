@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.Automation.HoroLab.TestCases.Login">
+        <methods>
+          <include name="testMethodEnd"/>
+          <include name="extentSetup"/>
+          <include name="Tc_Login_002"/>
+          <include name="testClassStart"/>
+          <include name="testMethodStart"/>
+          <include name="afterSuite"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.Automation.HoroLab.TestCases.Login -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

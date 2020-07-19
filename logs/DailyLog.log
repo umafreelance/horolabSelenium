@@ -1,0 +1,28 @@
+2020-07-19 10:06:15 INFO  LogFileControl:44 -  Default suite Suite Started 
+2020-07-19 10:06:28 INFO  LogFileControl:44 -  test method........  com.Automation.HoroLab.TestCases.Login  ............  Tc_Login_001  ............  org.openqa.selenium.support.events.EventFiringWebDriver@78641d23 
+2020-07-19 10:06:28 INFO  LogFileControl:57 -  Landing Page, Click on Login Link Clicked 
+2020-07-19 10:06:28 INFO  LogFileControl:57 -  Login Page, User Name Text Box Data entered as pawan 
+2020-07-19 10:06:28 INFO  LogFileControl:57 -  Login Page, Password Text Box Data entered as punshegde 
+2020-07-19 10:06:29 INFO  LogFileControl:57 -  Login Page, Click on Sign In Clicked 
+2020-07-19 10:06:29 INFO  LogFileControl:69 -  Login Success Validation Home Page is displaying 
+2020-07-19 10:06:46 INFO  LogFileControl:44 -  test method........  com.Automation.HoroLab.TestCases.Login  ............  Tc_Login_002  ............  org.openqa.selenium.support.events.EventFiringWebDriver@16746061 
+2020-07-19 10:06:47 INFO  LogFileControl:57 -  Landing Page, Click on Login Link Clicked 
+2020-07-19 10:06:47 INFO  LogFileControl:57 -  Login Page, User Name Text Box Data entered as pawan 
+2020-07-19 10:06:47 INFO  LogFileControl:57 -  Login Page, Password Text Box Data entered as hgjhjkhjjn 
+2020-07-19 10:06:48 INFO  LogFileControl:57 -  Login Page, Click on Sign In Clicked 
+2020-07-19 10:06:49 INFO  LogFileControl:69 -  Login Error Validation Login Error Message is displaying properly 
+2020-07-19 10:06:50 INFO  LogFileControl:44 -  Default suite Suite Ended 
+2020-07-19 10:08:30 INFO  LogFileControl:44 -  Default suite Suite Started 
+2020-07-19 10:08:45 INFO  LogFileControl:44 -  test method........  com.Automation.HoroLab.TestCases.Login  ............  Tc_Login_001  ............  org.openqa.selenium.support.events.EventFiringWebDriver@78641d23 
+2020-07-19 10:08:45 INFO  LogFileControl:57 -  Landing Page, Click on Login Link Clicked 
+2020-07-19 10:08:45 INFO  LogFileControl:57 -  Login Page, User Name Text Box Data entered as pawan 
+2020-07-19 10:08:46 INFO  LogFileControl:57 -  Login Page, Password Text Box Data entered as punshegde 
+2020-07-19 10:08:46 INFO  LogFileControl:57 -  Login Page, Click on Sign In Clicked 
+2020-07-19 10:08:46 INFO  LogFileControl:69 -  Login Success Validation Home Page is displaying 
+2020-07-19 10:09:00 INFO  LogFileControl:44 -  test method........  com.Automation.HoroLab.TestCases.Login  ............  Tc_Login_002  ............  org.openqa.selenium.support.events.EventFiringWebDriver@16746061 
+2020-07-19 10:09:01 INFO  LogFileControl:57 -  Landing Page, Click on Login Link Clicked 
+2020-07-19 10:09:01 INFO  LogFileControl:57 -  Login Page, User Name Text Box Data entered as pawan 
+2020-07-19 10:09:01 INFO  LogFileControl:57 -  Login Page, Password Text Box Data entered as hgjhjkhjjn 
+2020-07-19 10:09:01 INFO  LogFileControl:57 -  Login Page, Click on Sign In Clicked 
+2020-07-19 10:09:03 INFO  LogFileControl:69 -  Login Error Validation Login Error Message is displaying properly 
+2020-07-19 10:09:03 INFO  LogFileControl:44 -  Default suite Suite Ended 

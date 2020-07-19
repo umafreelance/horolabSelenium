@@ -1,0 +1,29 @@
+2020-07-19 09:17:16 INFO  LogFileControl:44 -  Default suite Suite Started 
+2020-07-19 09:17:35 INFO  LogFileControl:44 -  test method........  com.Automation.HoroLab.TestCases.Login  ............  Tc_Login_001  ............  org.openqa.selenium.support.events.EventFiringWebDriver@61e45f87 
+2020-07-19 09:18:06 INFO  LogFileControl:69 -  Login Success Validation Home Page is displaying 
+2020-07-19 09:18:06 INFO  LogFileControl:44 -  test method........  com.Automation.HoroLab.TestCases.Login  ............  Tc_Login_002  ............  org.openqa.selenium.support.events.EventFiringWebDriver@61e45f87 
+2020-07-19 09:19:09 INFO  LogFileControl:44 -  Default suite Suite Ended 
+2020-07-19 09:22:23 INFO  LogFileControl:44 -  Default suite Suite Started 
+2020-07-19 09:22:36 INFO  LogFileControl:44 -  test method........  com.Automation.HoroLab.TestCases.Login  ............  Tc_Login_001  ............  org.openqa.selenium.support.events.EventFiringWebDriver@591fd34d 
+2020-07-19 09:23:07 INFO  LogFileControl:69 -  Login Success Validation Home Page is displaying 
+2020-07-19 09:23:07 INFO  LogFileControl:44 -  test method........  com.Automation.HoroLab.TestCases.Login  ............  Tc_Login_002  ............  org.openqa.selenium.support.events.EventFiringWebDriver@591fd34d 
+2020-07-19 09:47:10 INFO  LogFileControl:44 -  Default suite Suite Ended 
+2020-07-19 09:49:19 INFO  LogFileControl:44 -  Default suite Suite Started 
+2020-07-19 09:49:31 INFO  LogFileControl:44 -  test method........  com.Automation.HoroLab.TestCases.Login  ............  Tc_Login_001  ............  org.openqa.selenium.support.events.EventFiringWebDriver@1fc32e4f 
+2020-07-19 09:50:01 INFO  LogFileControl:69 -  Login Success Validation Home Page is displaying 
+2020-07-19 09:50:02 INFO  LogFileControl:44 -  test method........  com.Automation.HoroLab.TestCases.Login  ............  Tc_Login_002  ............  org.openqa.selenium.support.events.EventFiringWebDriver@1fc32e4f 
+2020-07-19 09:51:03 INFO  LogFileControl:44 -  Default suite Suite Ended 
+2020-07-19 09:58:40 INFO  LogFileControl:44 -  Default suite Suite Started 
+2020-07-19 09:58:52 INFO  LogFileControl:44 -  test method........  com.Automation.HoroLab.TestCases.Login  ............  Tc_Login_001  ............  org.openqa.selenium.support.events.EventFiringWebDriver@1fc32e4f 
+2020-07-19 09:58:52 INFO  LogFileControl:57 -  Landing Page, Click on Login Link Clicked 
+2020-07-19 09:58:53 INFO  LogFileControl:57 -  Login Page, User Name Text Box Data entered as pawan 
+2020-07-19 09:58:53 INFO  LogFileControl:57 -  Login Page, Password Text Box Data entered as punshegde 
+2020-07-19 09:58:53 INFO  LogFileControl:57 -  Login Page, Click on Sign In Clicked 
+2020-07-19 09:58:53 INFO  LogFileControl:69 -  Login Success Validation Home Page is displaying 
+2020-07-19 09:58:54 INFO  LogFileControl:44 -  test method........  com.Automation.HoroLab.TestCases.Login  ............  Tc_Login_002  ............  org.openqa.selenium.support.events.EventFiringWebDriver@1fc32e4f 
+2020-07-19 09:58:54 INFO  LogFileControl:57 -  Landing Page, Click on Login Link Clicked 
+2020-07-19 09:58:54 INFO  LogFileControl:57 -  Login Page, User Name Text Box Data entered as pawan 
+2020-07-19 09:58:54 INFO  LogFileControl:126 - No Such Element with XPATH ://input[@formcontrolname='Password'] Element Not Found ~ Run Stop 
+2020-07-19 09:58:54 ERROR LogFileControl:127 - Error FOUND: 
+No Such Element with XPATH ://input[@formcontrolname='Password'] Element Not Found
+2020-07-19 09:58:56 INFO  LogFileControl:44 -  Default suite Suite Ended 
