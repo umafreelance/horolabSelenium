@@ -17,7 +17,7 @@ import com.Automation.HoroLab.LogFileControl;
 
 public class LoginPage extends Base {
 	public static final String loginLink_xpath="(//span[text()='Login/Register'])[1]";
-	public static final String userName_id="mat-input-0";
+	public static final String userName_xpath="//input[@formcontrolname='UserName']";
 	public static final String passWord_xpath="//input[@formcontrolname='Password']";
 	public static final String signIn_xpath="//span[text()='Sign In']";
 	public static final String homePage_xpath="//*[contains(@class,'sidenav-content')]";
@@ -32,10 +32,12 @@ public class LoginPage extends Base {
 	 */
 	public static void logIn(String username,String password) {
 		try {   
+//			Thread.sleep(300);
 			seleniumUtils.Click(Locator.XPATH, loginLink_xpath, "Landing", "Login Link");
-			seleniumUtils.SendKeys(Locator.ID, userName_id, username, "Login", "User Name");
+			seleniumUtils.SendKeys(Locator.XPATH, userName_xpath, username, "Login", "User Name");
 			seleniumUtils.SendKeys(Locator.XPATH, passWord_xpath, password, "Login", "Password");
 			seleniumUtils.Click(Locator.XPATH, signIn_xpath, "Login", "Sign In");
+			seleniumUtils.waitForPageLoad();
 		}catch(Exception e) {
 			System.out.println(e);
 			//Assert.fail("Fail due to exception "+e.getMessage());
@@ -73,6 +75,17 @@ public class LoginPage extends Base {
 		}catch(Exception e) {
 			System.out.println(e);
 			Assert.fail("Fail due to exception "+e.getMessage());
+		}
+	}
+	public static void logOut() {
+		try {
+			seleniumUtils.WaitForElementToBeAvailable(Locator.XPATH, "//mat-icon[contains(text(),'arrow_drop_down')]");
+			seleniumUtils.Click(Locator.XPATH, "//mat-icon[contains(text(),'arrow_drop_down')]", "HOME", "Sign Out Arrow");
+			seleniumUtils.Click(Locator.XPATH, "//a[contains(text(),'Sign Out')]", "HOME", "Sign Out");
+			seleniumUtils.waitForPageLoad();
+		}catch (Exception e) {
+			// TODO: handle exception
+			LogFileControl.logFail("Fail : ", "Fail due to exception "+e.getMessage());
 		}
 	}
 

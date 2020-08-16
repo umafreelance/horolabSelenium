@@ -47,7 +47,7 @@ public class DriverManager {
 			}
 			driver.manage().window().maximize();
 			ThreadDriver.set(driver);
-			wait.set(new WebDriverWait(driver, 30));
+			wait.set(new WebDriverWait(driver, 50));
 //			System.out.println(driver.getTitle());
 		}catch (Exception e) {
 			// TODO: handle exception

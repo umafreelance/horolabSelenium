@@ -17,7 +17,7 @@ public class Login extends Base{
 	
 	@Test(priority=1, description="Verify Login with Valid Username and Invalid Password")
 	public void Tc_Login_002() {
-		LoginPage.logIn("pawan", "hgjhjkhjjn");
+		LoginPage.logIn("", "");
 		LoginPage.validateLoginErrorMsg();
 	}
 }

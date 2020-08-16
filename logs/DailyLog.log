@@ -1,28 +1,124 @@
-2020-07-19 10:06:15 INFO  LogFileControl:44 -  Default suite Suite Started 
-2020-07-19 10:06:28 INFO  LogFileControl:44 -  test method........  com.Automation.HoroLab.TestCases.Login  ............  Tc_Login_001  ............  org.openqa.selenium.support.events.EventFiringWebDriver@78641d23 
-2020-07-19 10:06:28 INFO  LogFileControl:57 -  Landing Page, Click on Login Link Clicked 
-2020-07-19 10:06:28 INFO  LogFileControl:57 -  Login Page, User Name Text Box Data entered as pawan 
-2020-07-19 10:06:28 INFO  LogFileControl:57 -  Login Page, Password Text Box Data entered as punshegde 
-2020-07-19 10:06:29 INFO  LogFileControl:57 -  Login Page, Click on Sign In Clicked 
-2020-07-19 10:06:29 INFO  LogFileControl:69 -  Login Success Validation Home Page is displaying 
-2020-07-19 10:06:46 INFO  LogFileControl:44 -  test method........  com.Automation.HoroLab.TestCases.Login  ............  Tc_Login_002  ............  org.openqa.selenium.support.events.EventFiringWebDriver@16746061 
-2020-07-19 10:06:47 INFO  LogFileControl:57 -  Landing Page, Click on Login Link Clicked 
-2020-07-19 10:06:47 INFO  LogFileControl:57 -  Login Page, User Name Text Box Data entered as pawan 
-2020-07-19 10:06:47 INFO  LogFileControl:57 -  Login Page, Password Text Box Data entered as hgjhjkhjjn 
-2020-07-19 10:06:48 INFO  LogFileControl:57 -  Login Page, Click on Sign In Clicked 
-2020-07-19 10:06:49 INFO  LogFileControl:69 -  Login Error Validation Login Error Message is displaying properly 
-2020-07-19 10:06:50 INFO  LogFileControl:44 -  Default suite Suite Ended 
-2020-07-19 10:08:30 INFO  LogFileControl:44 -  Default suite Suite Started 
-2020-07-19 10:08:45 INFO  LogFileControl:44 -  test method........  com.Automation.HoroLab.TestCases.Login  ............  Tc_Login_001  ............  org.openqa.selenium.support.events.EventFiringWebDriver@78641d23 
-2020-07-19 10:08:45 INFO  LogFileControl:57 -  Landing Page, Click on Login Link Clicked 
-2020-07-19 10:08:45 INFO  LogFileControl:57 -  Login Page, User Name Text Box Data entered as pawan 
-2020-07-19 10:08:46 INFO  LogFileControl:57 -  Login Page, Password Text Box Data entered as punshegde 
-2020-07-19 10:08:46 INFO  LogFileControl:57 -  Login Page, Click on Sign In Clicked 
-2020-07-19 10:08:46 INFO  LogFileControl:69 -  Login Success Validation Home Page is displaying 
-2020-07-19 10:09:00 INFO  LogFileControl:44 -  test method........  com.Automation.HoroLab.TestCases.Login  ............  Tc_Login_002  ............  org.openqa.selenium.support.events.EventFiringWebDriver@16746061 
-2020-07-19 10:09:01 INFO  LogFileControl:57 -  Landing Page, Click on Login Link Clicked 
-2020-07-19 10:09:01 INFO  LogFileControl:57 -  Login Page, User Name Text Box Data entered as pawan 
-2020-07-19 10:09:01 INFO  LogFileControl:57 -  Login Page, Password Text Box Data entered as hgjhjkhjjn 
-2020-07-19 10:09:01 INFO  LogFileControl:57 -  Login Page, Click on Sign In Clicked 
-2020-07-19 10:09:03 INFO  LogFileControl:69 -  Login Error Validation Login Error Message is displaying properly 
-2020-07-19 10:09:03 INFO  LogFileControl:44 -  Default suite Suite Ended 
+2020-08-09 22:09:58 INFO  LogFileControl:44 -  Default suite Suite Started 
+2020-08-09 22:10:19 INFO  LogFileControl:44 -  test method........  com.Automation.HoroLab.TestCases.AdminModuleTestCases  ............  TC_PartsandModels_07_08_09  ............  org.openqa.selenium.support.events.EventFiringWebDriver@78641d23 
+2020-08-09 22:10:19 INFO  LogFileControl:69 -  Landing Page, Click on Login Link Clicked 
+2020-08-09 22:10:19 INFO  LogFileControl:69 -  Login Page, User Name Text Box Data entered as pawan 
+2020-08-09 22:10:20 INFO  LogFileControl:69 -  Login Page, Password Text Box Data entered as punshegde 
+2020-08-09 22:10:20 INFO  LogFileControl:69 -  Login Page, Click on Sign In Clicked 
+2020-08-09 22:10:25 INFO  LogFileControl:69 -  Admin Page, Click on Admin Tab Clicked 
+2020-08-09 22:10:27 INFO  LogFileControl:69 -  Admin Page, Click on Parts and Models Clicked 
+2020-08-09 22:10:28 INFO  LogFileControl:69 -  Admin Page, Click on Product Category Clicked 
+2020-08-09 22:10:29 INFO  LogFileControl:69 -  Admin Page, Click on Add Clicked 
+2020-08-09 22:10:29 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Code Text Box Data entered as C14789 
+2020-08-09 22:10:30 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Name Text Box Data entered as Aeyyli 
+2020-08-09 22:10:30 INFO  LogFileControl:69 -  Product Category | eSSMS Page, HSN Text Box Data entered as 5420 
+2020-08-09 22:10:30 INFO  LogFileControl:69 -  Product Category | eSSMS Page, GST Rate Text Box Data entered as 3 
+2020-08-09 22:10:30 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Click on Save Clicked 
+2020-08-09 22:10:33 INFO  LogFileControl:69 -  Product Category Added Product Category is displaying successfully 
+2020-08-09 22:10:33 INFO  LogFileControl:69 -  Admin Page, Click on Admin Tab Clicked 
+2020-08-09 22:10:34 INFO  LogFileControl:69 -  Admin Page, Click on Accessories Clicked 
+2020-08-09 22:10:36 INFO  LogFileControl:69 -  Admin Page, Click on Add Clicked 
+2020-08-09 22:10:36 INFO  LogFileControl:69 -  Accessories | eSSMS Page, Name Text Box Data entered as Ayoclf 
+2020-08-09 22:10:37 INFO  LogFileControl:69 -  Accessories | eSSMS Page, Click on Product Category Clicked 
+2020-08-09 22:10:38 INFO  LogFileControl:57 -  Accessories | eSSMS Product Category selected as: AEYYLI 
+2020-08-09 22:10:38 INFO  LogFileControl:69 -  Accessories | eSSMS Page, Click on Save Clicked 
+2020-08-09 22:10:40 INFO  LogFileControl:69 -  Accessories Added Accessories is displaying successfully 
+2020-08-09 22:10:40 INFO  LogFileControl:69 -  Accessories | eSSMS Page, Click on Edit Clicked 
+2020-08-09 22:10:40 INFO  LogFileControl:69 -  Accessories | eSSMS Page, Name Text Box Data entered as Aefhqb 
+2020-08-09 22:10:41 INFO  LogFileControl:69 -  Accessories | eSSMS Page, Click on Save Clicked 
+2020-08-09 22:10:42 INFO  LogFileControl:69 -  Accessories | eSSMS After edit Old Name is not displaying in the list 
+2020-08-09 22:10:42 INFO  LogFileControl:69 -  Accessories | eSSMS After edit New Name is displaying in the list 
+2020-08-09 22:10:43 INFO  LogFileControl:69 -  Admin Page, Click on Admin Tab Clicked 
+2020-08-09 22:10:44 INFO  LogFileControl:69 -  Admin Page, Click on Product Category Clicked 
+2020-08-09 22:10:45 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Click on Edit Clicked 
+2020-08-09 22:10:46 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Name Text Box Data entered as Aefzit 
+2020-08-09 22:10:46 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Click on Save Clicked 
+2020-08-09 22:10:48 INFO  LogFileControl:69 -  Product Category | eSSMS After edit Old Name is not displaying in the list 
+2020-08-09 22:10:48 INFO  LogFileControl:69 -  Product Category | eSSMS After edit New Name is displaying in the list 
+2020-08-09 22:10:48 INFO  LogFileControl:126 - No Such Element with XPATH :(//span[text()=' AEYYLI ']/following::mat-icon[text()='delete'])[1] Element Not Found ~ Run Stop 
+2020-08-09 22:10:48 ERROR LogFileControl:127 - Error FOUND: 
+No Such Element with XPATH :(//span[text()=' AEYYLI ']/following::mat-icon[text()='delete'])[1] Element Not Found
+2020-08-09 22:10:50 INFO  LogFileControl:44 -  Default suite Suite Ended 
+2020-08-09 22:12:01 INFO  LogFileControl:44 -  Default suite Suite Started 
+2020-08-09 22:12:18 INFO  LogFileControl:44 -  test method........  com.Automation.HoroLab.TestCases.AdminModuleTestCases  ............  TC_PartsandModels_07_08_09  ............  org.openqa.selenium.support.events.EventFiringWebDriver@78641d23 
+2020-08-09 22:12:18 INFO  LogFileControl:69 -  Landing Page, Click on Login Link Clicked 
+2020-08-09 22:12:18 INFO  LogFileControl:69 -  Login Page, User Name Text Box Data entered as pawan 
+2020-08-09 22:12:19 INFO  LogFileControl:69 -  Login Page, Password Text Box Data entered as punshegde 
+2020-08-09 22:12:19 INFO  LogFileControl:69 -  Login Page, Click on Sign In Clicked 
+2020-08-09 22:12:24 INFO  LogFileControl:69 -  Admin Page, Click on Admin Tab Clicked 
+2020-08-09 22:12:27 INFO  LogFileControl:69 -  Admin Page, Click on Parts and Models Clicked 
+2020-08-09 22:12:27 INFO  LogFileControl:69 -  Admin Page, Click on Product Category Clicked 
+2020-08-09 22:12:28 INFO  LogFileControl:69 -  Admin Page, Click on Add Clicked 
+2020-08-09 22:12:29 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Code Text Box Data entered as C31292 
+2020-08-09 22:12:29 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Name Text Box Data entered as Adqgxs 
+2020-08-09 22:12:29 INFO  LogFileControl:69 -  Product Category | eSSMS Page, HSN Text Box Data entered as 7848 
+2020-08-09 22:12:30 INFO  LogFileControl:69 -  Product Category | eSSMS Page, GST Rate Text Box Data entered as 1 
+2020-08-09 22:12:30 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Click on Save Clicked 
+2020-08-09 22:12:33 INFO  LogFileControl:69 -  Product Category Added Product Category is displaying successfully 
+2020-08-09 22:12:33 INFO  LogFileControl:69 -  Admin Page, Click on Admin Tab Clicked 
+2020-08-09 22:12:35 INFO  LogFileControl:69 -  Admin Page, Click on Accessories Clicked 
+2020-08-09 22:12:36 INFO  LogFileControl:69 -  Admin Page, Click on Add Clicked 
+2020-08-09 22:12:36 INFO  LogFileControl:69 -  Accessories | eSSMS Page, Name Text Box Data entered as Ajwhpk 
+2020-08-09 22:12:38 INFO  LogFileControl:69 -  Accessories | eSSMS Page, Click on Product Category Clicked 
+2020-08-09 22:12:38 INFO  LogFileControl:57 -  Accessories | eSSMS Product Category selected as: ADQGXS 
+2020-08-09 22:12:38 INFO  LogFileControl:69 -  Accessories | eSSMS Page, Click on Save Clicked 
+2020-08-09 22:12:40 INFO  LogFileControl:69 -  Accessories Added Accessories is displaying successfully 
+2020-08-09 22:12:40 INFO  LogFileControl:69 -  Accessories | eSSMS Page, Click on Edit Clicked 
+2020-08-09 22:12:40 INFO  LogFileControl:69 -  Accessories | eSSMS Page, Name Text Box Data entered as Aclcrb 
+2020-08-09 22:12:41 INFO  LogFileControl:69 -  Accessories | eSSMS Page, Click on Save Clicked 
+2020-08-09 22:12:42 INFO  LogFileControl:69 -  Accessories | eSSMS After edit Old Name is not displaying in the list 
+2020-08-09 22:12:42 INFO  LogFileControl:69 -  Accessories | eSSMS After edit New Name is displaying in the list 
+2020-08-09 22:12:43 INFO  LogFileControl:69 -  Admin Page, Click on Admin Tab Clicked 
+2020-08-09 22:12:44 INFO  LogFileControl:69 -  Admin Page, Click on Product Category Clicked 
+2020-08-09 22:12:45 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Click on Edit Clicked 
+2020-08-09 22:12:46 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Name Text Box Data entered as Azwnqo 
+2020-08-09 22:12:46 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Click on Save Clicked 
+2020-08-09 22:12:48 INFO  LogFileControl:69 -  Product Category | eSSMS After edit Old Name is not displaying in the list 
+2020-08-09 22:12:48 INFO  LogFileControl:69 -  Product Category | eSSMS After edit New Name is displaying in the list 
+2020-08-09 22:12:48 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Click on Delete Clicked 
+2020-08-09 22:12:48 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Click on Yes Clicked 
+2020-08-09 22:12:48 INFO  LogFileControl:69 -  Product Category | eSSMS Deleted one is not displaying in the list 
+2020-08-09 22:12:50 INFO  LogFileControl:69 -  Admin Page, Click on Admin Tab Clicked 
+2020-08-09 22:12:51 INFO  LogFileControl:69 -  Admin Page, Click on Accessories Clicked 
+2020-08-09 22:12:52 INFO  LogFileControl:69 -  Accessories | eSSMS Accessories under deleted prod category one is not displaying in the list 
+2020-08-09 22:12:54 INFO  LogFileControl:44 -  Default suite Suite Ended 
+2020-08-09 22:22:55 INFO  LogFileControl:44 -  Default suite Suite Started 
+2020-08-09 22:23:13 INFO  LogFileControl:44 -  test method........  com.Automation.HoroLab.TestCases.AdminModuleTestCases  ............  TC_PartsandModels_01_02_03_04_05_06  ............  org.openqa.selenium.support.events.EventFiringWebDriver@74589991 
+2020-08-09 22:23:14 INFO  LogFileControl:69 -  Landing Page, Click on Login Link Clicked 
+2020-08-09 22:23:14 INFO  LogFileControl:69 -  Login Page, User Name Text Box Data entered as pawan 
+2020-08-09 22:23:14 INFO  LogFileControl:69 -  Login Page, Password Text Box Data entered as punshegde 
+2020-08-09 22:23:14 INFO  LogFileControl:69 -  Login Page, Click on Sign In Clicked 
+2020-08-09 22:23:19 INFO  LogFileControl:69 -  Admin Page, Click on Admin Tab Clicked 
+2020-08-09 22:23:22 INFO  LogFileControl:69 -  Admin Page, Click on Parts and Models Clicked 
+2020-08-09 22:23:22 INFO  LogFileControl:69 -  Admin Page, Click on Product Category Clicked 
+2020-08-09 22:23:24 INFO  LogFileControl:69 -  Admin Page, Click on Add Clicked 
+2020-08-09 22:23:24 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Code Text Box Data entered as C2519 
+2020-08-09 22:23:24 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Name Text Box Data entered as Afopkc 
+2020-08-09 22:23:24 INFO  LogFileControl:69 -  Product Category | eSSMS Page, HSN Text Box Data entered as 3989 
+2020-08-09 22:23:25 INFO  LogFileControl:69 -  Product Category | eSSMS Page, GST Rate Text Box Data entered as 2 
+2020-08-09 22:23:25 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Click on Save Clicked 
+2020-08-09 22:23:26 INFO  LogFileControl:69 -  Product Category Added Product Category is displaying successfully 
+2020-08-09 22:23:27 INFO  LogFileControl:69 -  Admin Page, Click on Add Clicked 
+2020-08-09 22:23:27 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Code Text Box Data entered as C2519 
+2020-08-09 22:23:27 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Name Text Box Data entered as Afopkc 
+2020-08-09 22:23:27 INFO  LogFileControl:69 -  Product Category | eSSMS Page, HSN Text Box Data entered as 3989 
+2020-08-09 22:23:28 INFO  LogFileControl:69 -  Product Category | eSSMS Page, GST Rate Text Box Data entered as 2 
+2020-08-09 22:23:28 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Click on Save Clicked 
+2020-08-09 22:23:29 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Click on Cancel Clicked 
+2020-08-09 22:23:30 INFO  LogFileControl:69 -  State Already exist error message is displaying correctly, Error displayed as : Code with this value already exists 
+2020-08-09 22:23:30 INFO  LogFileControl:69 -  Admin Page, Click on Admin Tab Clicked 
+2020-08-09 22:23:32 INFO  LogFileControl:69 -  Admin Page, Click on Accessories Clicked 
+2020-08-09 22:23:33 INFO  LogFileControl:69 -  Admin Page, Click on Add Clicked 
+2020-08-09 22:23:33 INFO  LogFileControl:69 -  Accessories | eSSMS Page, Name Text Box Data entered as Aysrjl 
+2020-08-09 22:23:35 INFO  LogFileControl:69 -  Accessories | eSSMS Page, Click on Product Category Clicked 
+2020-08-09 22:23:35 INFO  LogFileControl:57 -  Accessories | eSSMS Product Category selected as: AFOPKC 
+2020-08-09 22:23:35 INFO  LogFileControl:69 -  Accessories | eSSMS Page, Click on Save Clicked 
+2020-08-09 22:23:37 INFO  LogFileControl:69 -  Accessories Added Accessories is displaying successfully 
+2020-08-09 22:23:37 INFO  LogFileControl:69 -  Accessories | eSSMS Page, Click on Delete Clicked 
+2020-08-09 22:23:37 INFO  LogFileControl:69 -  Accessories | eSSMS Page, Click on Yes Clicked 
+2020-08-09 22:23:37 INFO  LogFileControl:69 -  Accessories | eSSMS Deleted one is not displaying in the list 
+2020-08-09 22:23:39 INFO  LogFileControl:69 -  Admin Page, Click on Admin Tab Clicked 
+2020-08-09 22:23:40 INFO  LogFileControl:69 -  Admin Page, Click on Product Category Clicked 
+2020-08-09 22:23:41 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Click on Delete Clicked 
+2020-08-09 22:23:42 INFO  LogFileControl:69 -  Product Category | eSSMS Page, Click on Yes Clicked 
+2020-08-09 22:23:42 INFO  LogFileControl:69 -  Product Category | eSSMS Deleted one is not displaying in the list 
+2020-08-09 22:23:43 INFO  LogFileControl:44 -  Default suite Suite Ended 

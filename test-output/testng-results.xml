@@ -1,87 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33254" started-at="2020-07-19T04:38:30Z" finished-at="2020-07-19T04:39:03Z">
+  <suite name="Default suite" duration-ms="48237" started-at="2020-08-09T16:52:55Z" finished-at="2020-08-09T16:53:43Z">
     <groups>
+      <group name="Admin">
+        <method signature="AdminModuleTestCases.TC_PartsandModels_01_02_03_04_05_06()[pri:16, instance:com.Automation.HoroLab.TestCases.AdminModuleTestCases@13deb50e]" name="TC_PartsandModels_01_02_03_04_05_06" class="com.Automation.HoroLab.TestCases.AdminModuleTestCases"/>
+      </group> <!-- Admin -->
     </groups>
-    <test name="Default test" duration-ms="33254" started-at="2020-07-19T04:38:30Z" finished-at="2020-07-19T04:39:03Z">
-      <class name="com.Automation.HoroLab.TestCases.Login">
-        <test-method status="PASS" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:com.Automation.HoroLab.TestCases.Login@13deb50e]" name="extentSetup" is-config="true" duration-ms="264" started-at="2020-07-19T10:08:30Z" finished-at="2020-07-19T10:08:30Z">
+    <test name="Default test" duration-ms="48237" started-at="2020-08-09T16:52:55Z" finished-at="2020-08-09T16:53:43Z">
+      <class name="com.Automation.HoroLab.TestCases.AdminModuleTestCases">
+        <test-method status="PASS" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:com.Automation.HoroLab.TestCases.AdminModuleTestCases@13deb50e]" name="extentSetup" is-config="true" duration-ms="256" started-at="2020-08-09T22:22:55Z" finished-at="2020-08-09T22:22:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@30d4b288]]>
+                <![CDATA[org.testng.TestRunner@5b04476e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentSetup -->
-        <test-method status="PASS" signature="testMethodStart(java.lang.reflect.Method)[pri:0, instance:com.Automation.HoroLab.TestCases.Login@13deb50e]" name="testMethodStart" is-config="true" duration-ms="14807" started-at="2020-07-19T10:08:30Z" finished-at="2020-07-19T10:08:45Z">
+        <test-method status="PASS" signature="testMethodStart(java.lang.reflect.Method)[pri:0, instance:com.Automation.HoroLab.TestCases.AdminModuleTestCases@13deb50e]" name="testMethodStart" is-config="true" duration-ms="18159" started-at="2020-08-09T22:22:55Z" finished-at="2020-08-09T22:23:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.Automation.HoroLab.TestCases.Login.Tc_Login_001()]]>
+                <![CDATA[public static void com.Automation.HoroLab.TestCases.AdminModuleTestCases.TC_PartsandModels_01_02_03_04_05_06()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethodStart -->
-        <test-method status="PASS" signature="Tc_Login_001()[pri:0, instance:com.Automation.HoroLab.TestCases.Login@13deb50e]" name="Tc_Login_001" duration-ms="1121" started-at="2020-07-19T10:08:45Z" description="Verify Login with Valid Username and Valid Password" finished-at="2020-07-19T10:08:46Z">
+        <test-method status="PASS" signature="TC_PartsandModels_01_02_03_04_05_06()[pri:16, instance:com.Automation.HoroLab.TestCases.AdminModuleTestCases@13deb50e]" name="TC_PartsandModels_01_02_03_04_05_06" duration-ms="28420" started-at="2020-08-09T22:23:13Z" description="Create Product Category and Validate, try to add same Product Category and validate error message, add Accessories, verify error on duplicate entry, delete accessories, delete product category" finished-at="2020-08-09T22:23:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Tc_Login_001 -->
-        <test-method status="PASS" signature="testMethodEnd(org.testng.ITestResult)[pri:0, instance:com.Automation.HoroLab.TestCases.Login@13deb50e]" name="testMethodEnd" is-config="true" duration-ms="1372" started-at="2020-07-19T10:08:46Z" finished-at="2020-07-19T10:08:47Z">
+        </test-method> <!-- TC_PartsandModels_01_02_03_04_05_06 -->
+        <test-method status="PASS" signature="testMethodEnd(org.testng.ITestResult)[pri:0, instance:com.Automation.HoroLab.TestCases.AdminModuleTestCases@13deb50e]" name="testMethodEnd" is-config="true" duration-ms="1649" started-at="2020-08-09T22:23:42Z" finished-at="2020-08-09T22:23:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Tc_Login_001 status=SUCCESS method=Login.Tc_Login_001()[pri:0, instance:com.Automation.HoroLab.TestCases.Login@13deb50e] output={null}]]]>
+                <![CDATA[[TestResult name=TC_PartsandModels_01_02_03_04_05_06 status=SUCCESS method=AdminModuleTestCases.TC_PartsandModels_01_02_03_04_05_06()[pri:16, instance:com.Automation.HoroLab.TestCases.AdminModuleTestCases@13deb50e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethodEnd -->
-        <test-method status="PASS" signature="testMethodStart(java.lang.reflect.Method)[pri:0, instance:com.Automation.HoroLab.TestCases.Login@13deb50e]" name="testMethodStart" is-config="true" duration-ms="12987" started-at="2020-07-19T10:08:47Z" finished-at="2020-07-19T10:09:00Z">
+        <test-method status="PASS" signature="afterSuite(org.testng.ITestContext)[pri:0, instance:com.Automation.HoroLab.TestCases.AdminModuleTestCases@13deb50e]" name="afterSuite" is-config="true" duration-ms="22" started-at="2020-08-09T22:23:43Z" finished-at="2020-08-09T22:23:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.Automation.HoroLab.TestCases.Login.Tc_Login_002()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethodStart -->
-        <test-method status="PASS" signature="Tc_Login_002()[pri:1, instance:com.Automation.HoroLab.TestCases.Login@13deb50e]" name="Tc_Login_002" duration-ms="2093" started-at="2020-07-19T10:09:00Z" description="Verify Login with Valid Username and Invalid Password" finished-at="2020-07-19T10:09:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tc_Login_002 -->
-        <test-method status="PASS" signature="testMethodEnd(org.testng.ITestResult)[pri:0, instance:com.Automation.HoroLab.TestCases.Login@13deb50e]" name="testMethodEnd" is-config="true" duration-ms="860" started-at="2020-07-19T10:09:03Z" finished-at="2020-07-19T10:09:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Tc_Login_002 status=SUCCESS method=Login.Tc_Login_002()[pri:1, instance:com.Automation.HoroLab.TestCases.Login@13deb50e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethodEnd -->
-        <test-method status="PASS" signature="afterSuite(org.testng.ITestContext)[pri:0, instance:com.Automation.HoroLab.TestCases.Login@13deb50e]" name="afterSuite" is-config="true" duration-ms="24" started-at="2020-07-19T10:09:03Z" finished-at="2020-07-19T10:09:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@30d4b288]]>
+                <![CDATA[org.testng.TestRunner@5b04476e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.Automation.HoroLab.TestCases.Login -->
+      </class> <!-- com.Automation.HoroLab.TestCases.AdminModuleTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

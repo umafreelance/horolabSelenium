@@ -18,6 +18,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 import com.Automation.HoroLab.SuppotLibrary;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class Base {
 
@@ -28,6 +29,7 @@ public class Base {
 	public static WriteConfig writeConfig = new WriteConfig();
 	public static ThreadLocal<String> threadscriptId=new ThreadLocal<String>() ;
 	public static ThreadLocal<String> threadmethodName=new ThreadLocal<String>() ;
+	public static DataProvider dataProvider= new DataProvider();
 	static Base base=new Base();
 	public static String url=null , browser = null, environment = null, group = null,parallelCount =null;
 	//	public static ExtentReports extentReports;
@@ -51,6 +53,16 @@ public class Base {
 		csvFileName.set(new String(value));
 	}
 
+	public static String getPropertyData(String key){
+
+		String value=dataProvider.getPropertyvalue("DataStore",key);
+		return value;
+
+	}
+	public static void storeData(String key,String value){
+
+		writeConfig.writeData(key,value,"DataStore");
+	}
 	
 	@SuppressWarnings("deprecation")
 	@BeforeSuite(alwaysRun=true)
@@ -108,13 +120,13 @@ public class Base {
 			if(url!=null){
 				DriverManager.getDriver().get(url);
 			}else{
-				DriverManager.getDriver().get("http://demo.horolab.in/#/ecommerce/home");
+				DriverManager.getDriver().get("http://qa.horolab.in/#/ecommerce/home");
 			}
 			LogFileControl.logInfo("test method........  "+this.getClass().getName()+"  ............  "+method.getName()+"  ............  "+DriverManager.getDriver());
 //			System.out.println("test method........  "+this.getClass().getName()+"  ............  "+method.getName()+"  ............  "+DriverManager.getDriver()+".........."+Thread.currentThread().getId());
 			setScriptId(method.getName());
 			ExtentTestManager.setlogger(ExtentTestManager.startTest(getScriptId()));
-			System.out.println("............................");
+			System.out.println(".............UmaSasmal...............");
 		}catch(Exception e){
 			e.printStackTrace();
 		}
@@ -126,6 +138,7 @@ public class Base {
 			if(result.getStatus() == ITestResult.FAILURE){
 				System.out.println("TEST******");
 			}
+			ExtentTestManager.getlogger().log(LogStatus.INFO, "Last Visible Screen of Current Execution", "Final Screenshot" +ExtentTestManager.getlogger().addScreenCapture(suppotLibrary.screenCapture(DriverManager.getDriver(),getScriptId())));
 			ExtentTestManager.endTest();  // new
 			ExtentTestManager.extent.flush();
 			tearDown();

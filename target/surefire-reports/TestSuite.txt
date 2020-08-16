@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 301.48 s <<< FAILURE! - in TestSuite
+Tc_Login_002(com.Automation.HoroLab.TestCases.Login)  Time elapsed: 31.082 s  <<< FAILURE!
+java.lang.AssertionError: Fail due to exception Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()='Login Failed, Reason : Bad credentials'] (tried for 30 second(s) with 500 MILLISECONDS interval)
+	at com.Automation.HoroLab.TestCases.Login.Tc_Login_002(Login.java:21)
+

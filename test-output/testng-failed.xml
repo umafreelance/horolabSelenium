@@ -3,17 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.Automation.HoroLab.TestCases.Login">
+      <class name="com.Automation.HoroLab.TestCases.AdminModuleTestCases">
         <methods>
           <include name="testMethodEnd"/>
           <include name="extentSetup"/>
-          <include name="Tc_Login_002"/>
-          <include name="testClassStart"/>
           <include name="testMethodStart"/>
           <include name="afterSuite"/>
-          <include name="tearDown"/>
+          <include name="TC_PartsandModels_07_08_09"/>
         </methods>
-      </class> <!-- com.Automation.HoroLab.TestCases.Login -->
+      </class> <!-- com.Automation.HoroLab.TestCases.AdminModuleTestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

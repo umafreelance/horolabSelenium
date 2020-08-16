@@ -18,6 +18,8 @@ import org.testng.ITestContext;
 
 import com.Automation.HoroLab.Locators.Locator;
 import com.Automation.HoroLab.Locators.Selector;
+import com.relevantcodes.extentreports.LogStatus;
+import com.thoughtworks.selenium.webdriven.commands.WaitForPageToLoad;
 
 
 
@@ -38,7 +40,7 @@ public class SeleniumUtils implements Utils {
 	//		}
 	//	
 	
-
+	static SuppotLibrary suppotLibrary = new SuppotLibrary();
 	public static String noElementFound = "Element Not Found";
 	public static String elementStatus = "No Such Element with ";
 	
@@ -50,6 +52,7 @@ public class SeleniumUtils implements Utils {
 	 * @return
 	 */
 	WebElement webElement(Locator locatorType,String locatorValue){
+		waitForPageLoad();
 		WebElement element = null;
 		try{
 			//WebDriverManager.getDriver() DriverManager.getDriver() = DriverManager.getDriver()Factory.getInstance().getDriverManager.getDriver()();
@@ -63,6 +66,7 @@ public class SeleniumUtils implements Utils {
 	}
 
 	List<WebElement> webElements(Locator locatorType,String locatorValue){
+		waitForPageLoad();
 		List<WebElement> element= null;
 		try{
 			//WebDriverManager.getDriver() DriverManager.getDriver() = DriverManager.getDriver()Factory.getInstance().getDriverManager.getDriver()();
@@ -158,8 +162,8 @@ public class SeleniumUtils implements Utils {
 				Actions action= new Actions(DriverManager.getDriver()); 
 				action.moveToElement(element).click().build().perform();
 			}
-			
-			LogFileControl.logInfo(pageName+" Page, Click on "+elementName, "Clicked");
+			LogFileControl.logPass(pageName+" Page, Click on "+elementName, "Clicked");
+//			LogFileControl.logInfo(pageName+" Page, Click on "+elementName, "Clicked");
 			//                  ExtentTestManager.getlogger().log(LogStatus.INFO, pageName+" Page, Click on "+elementName, "Clicked");
 		}else{
 			try {
@@ -191,6 +195,92 @@ public class SeleniumUtils implements Utils {
 		}
 	}
 
+	@Override
+	public String DropDownSelect(Locator locatorType,String locatorValue,String dropdownValue,String pageName,String elementName) {
+		try {
+			waitForPageLoad();
+			WebElement e = webElement(locatorType, locatorValue);
+			Click(locatorType, locatorValue, pageName, elementName);
+			waitForPageLoad();
+			//e.click();
+			int i=0;
+			int s = Size(Locator.XPATH, "//div[@class='cdk-overlay-pane']/div/mat-option");
+			if(s==0) {
+				s = Size(Locator.XPATH, "//div[@class='cdk-overlay-pane']/div/div/mat-option");
+			}
+			int j =0,k;
+			Thread.sleep(100);
+			boolean flag = false;
+			String text;
+			try {
+				text = DriverManager.getDriver().findElement(By.xpath("//div[@class='cdk-overlay-pane']/div/mat-option[1]/span")).getText();
+			} catch (Exception e2) {
+				text = DriverManager.getDriver().findElement(By.xpath("//div[@class='cdk-overlay-pane']/div/div/mat-option[1]/span")).getText();
+			}
+			if(text.toLowerCase().contains("none"))
+				k=2;
+				else
+					k=1;
+			while(s<k &&  i<=40) {
+				Thread.sleep(1500);
+				try {
+					DriverManager.getDriver().findElement(By.xpath("//div[@class='cdk-overlay-pane']/div/mat-option[1]")).click();
+				} catch (Exception e2) {
+					DriverManager.getDriver().findElement(By.xpath("//div[@class='cdk-overlay-pane']/div/div/mat-option[1]")).click();
+				}
+				
+				e.click();
+				s = Size(Locator.XPATH, "//div[@class='cdk-overlay-pane']/div/mat-option");
+				if(s==0) {
+					s = Size(Locator.XPATH, "//div[@class='cdk-overlay-pane']/div/div/mat-option");
+				}
+				i++;
+			}
+			try {
+				j =Integer.valueOf(dropdownValue);
+				try {
+					dropdownValue = DriverManager.getDriver().findElement(By.xpath("//div[@class='cdk-overlay-pane']/div/mat-option["+j+"]/span")).getText();
+					if(dropdownValue.toLowerCase().contains("none")) {
+						j=j+1;
+						Thread.sleep(500);
+						dropdownValue = DriverManager.getDriver().findElement(By.xpath("//div[@class='cdk-overlay-pane']/div/mat-option["+j+"]/span")).getText();
+						
+					}
+					DriverManager.getDriver().findElement(By.xpath("//div[@class='cdk-overlay-pane']/div/mat-option["+j+"]")).click();
+				} catch (Exception e2) {
+					dropdownValue = DriverManager.getDriver().findElement(By.xpath("//div[@class='cdk-overlay-pane']/div/div/mat-option["+j+"]/span")).getText();
+					if(dropdownValue.toLowerCase().contains("none")) {
+						j=j+1;
+						Thread.sleep(500);
+						dropdownValue = DriverManager.getDriver().findElement(By.xpath("//div[@class='cdk-overlay-pane']/div/div/mat-option["+j+"]/span")).getText();
+						
+					}
+					DriverManager.getDriver().findElement(By.xpath("//div[@class='cdk-overlay-pane']/div/div/mat-option["+j+"]")).click();
+				}
+				System.out.println(j);
+			} catch (Exception e2) {
+				WebElement e1 = webElement(Locator.XPATH, "//div[@class='cdk-overlay-pane']/div/mat-option/span[text()='"+dropdownValue+"']");
+				if(e1==null) {
+					e1=webElement(Locator.XPATH, "//div[@class='cdk-overlay-pane']/div/div/mat-option/span[text()='"+dropdownValue+"']");
+				}
+				if(e1==null) {
+					e1=webElement(Locator.XPATH, "//span[contains(text(),'"+dropdownValue+"')]");
+				}
+				//div[@class='cdk-overlay-pane']/div/mat-option/span[text()='ODISHA']
+				e1.click();
+			}
+			
+			LogFileControl.logInfo(pageName, elementName+" selected as: "+dropdownValue);
+		} catch (Exception e) {
+			try {
+				System.out.println(e.getMessage());
+				LogFileControl.logFailwithScreenCapture(pageName, elementName+" : "+dropdownValue+" is not available");
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+			}
+		}
+		return dropdownValue;
+	}
 	
 	/* (non-Javadoc)
 	 * @see com.Automation.HoroLab.Utils#Clear(com.Automation.HoroLab.Locators.Locator, java.lang.String)
@@ -266,7 +356,8 @@ public class SeleniumUtils implements Utils {
 				element.sendKeys(Keys.chord(Keys.HOME));
 				element.sendKeys(value);
 			}
-			LogFileControl.logInfo(pageName+" Page, "+elementName+" Text Box", "Data entered as "+value);
+			LogFileControl.logPass(pageName+" Page, "+elementName+" Text Box", "Data entered as "+value);
+//			LogFileControl.logInfo(pageName+" Page, "+elementName+" Text Box", "Data entered as "+value);
 			element.sendKeys(Keys.chord(Keys.TAB));
 			waitForPageLoad();
 		}else{
@@ -871,7 +962,7 @@ public class SeleniumUtils implements Utils {
 	@Override
 	public  void waitForPageLoad(){
 		try{
-		//	DriverManager.getWait().until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//img[contains(@src,'Ajax-Loader')]")));
+			DriverManager.getWait().until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//*[@id='loader']")));
 		}catch(Exception e){}
 		try{
 			Thread.sleep(50);
@@ -1050,6 +1141,16 @@ public class SeleniumUtils implements Utils {
 		By element = selector(locatorType,locatorValue);
 		DriverManager.getWait().until(ExpectedConditions.invisibilityOfElementLocated(element));
 	}
+	
+	@Override
+	public void takeScreenshot() {
+		// TODO Auto-generated method stub
+		try {
+			ExtentTestManager.getlogger().log(LogStatus.INFO, "ScreenShot Captured", "User Selected Screenshot" +ExtentTestManager.getlogger().addScreenCapture(suppotLibrary.screenCapture(DriverManager.getDriver(),LogFileControl.getScriptId_report())));
+			//			ExtentTestManager.getlogger().addScreenCapture(suppotLibrary.screenCapture(DriverManager.getDriver(),LogFileControl.getScriptId_report()));
+		} catch (Exception e) {
+			// TODO: handle exception
+		}	}
 
 }
 

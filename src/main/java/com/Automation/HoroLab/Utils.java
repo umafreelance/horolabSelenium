@@ -243,6 +243,8 @@ public interface Utils {
 	 * @description Quits the browser
 	 */
 	void quitBrowser();
+	
+	public String DropDownSelect(Locator locatorType,String locatorValue,String dropdownValue,String pageName,String elementName) ;
 
 	/* (non-Javadoc)
 	 * @see com.Automation.HoroLab.Utils#isDisabled(com.Automation.HoroLab.Locators.Locator, java.lang.String)
@@ -295,4 +297,6 @@ public interface Utils {
 	void waitforElementToBeSelected(Locator locatorType,String locatorValue);
 	
 	void waitforInvisibilityOfElement(Locator locatorType,String locatorValue);
+	
+	void takeScreenshot();
 }

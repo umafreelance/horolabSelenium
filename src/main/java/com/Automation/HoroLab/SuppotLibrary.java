@@ -80,12 +80,5 @@ public class SuppotLibrary {
 		return dest;
 	}
 	
-	public double getdecimalRounder(String decimalRound){
-		int dr=Integer.valueOf(decimalRound);
-		double rounder=1;
-		for(int j=0;j<dr;j++){
-			rounder=rounder*10.0;
-		}
-		return rounder;
-	}
+	
 }
